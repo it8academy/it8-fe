@@ -27,7 +27,7 @@ const Nav = ({ toggle, handleToggle }) => {
   // };
 
   return (
-    <div className={toggle ? classes.navMobile : classes.navDesktop}>
+    <div className={toggle ? classes.navDesktop : classes.navMobile}>
       <nav className={classes.nav}>
         <NavLink to="/">Home</NavLink>
         <NavLink className={classes.courses}>
