@@ -1,0 +1,65 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    /* width:100%; */
+
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: 30px
+}
+
+
+.formLabel {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    padding-bottom: 0.5rem;
+
+}
+
+
+.formInput {
+    width: -webkit-fill-available;
+    padding: 1rem;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0.8rem 0;
+    background: #172023;
+    border: 1px solid #1D4ED8;
+    color: #fff;
+}
+
+.formInput:focus {
+    outline: none;
+}
+
+.formInput::placeholder {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-left: 0.5rem;
+}
+
+.error {
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+.formInput:invalid[focused="true"] {
+    border: 1px solid red;
+}
+
+.formInput:invalid[focused="true"]~.error {
+    display: block;
+}
+
+/* @media screen and (max-width: 768px) {} */

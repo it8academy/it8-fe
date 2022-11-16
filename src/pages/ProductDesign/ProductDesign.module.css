@@ -1,0 +1,11 @@
+.head {
+    background-color: #171717;
+    position: relative;
+}
+
+.top img {
+    position: fixed;
+    top: 60%;
+    right: 3%;
+    width: 3%;
+}

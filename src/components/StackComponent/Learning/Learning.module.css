@@ -1,0 +1,36 @@
+.Learning {
+    color: white;
+    margin: 5rem auto;
+    width: 85%;
+    padding-bottom: 2rem;
+}
+
+.Learning h2 {
+    margin-bottom: 1.5rem;
+}
+
+.words {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 2px solid #455A64;
+    border-color: #455A64;
+}
+
+.words .lead {
+    width: 45%;
+    display: flex;
+}
+
+.words p {
+    width: 45%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 20px;
+
+}
+
+.words h4:last-child {
+    margin-left: 2rem;
+}

@@ -1,0 +1,36 @@
+.stack_card{
+    background-color: #292929;
+    border-top:4px solid #0098D1;
+    width: 100%;
+    padding: 30px;
+    margin: 0 0 1rem;
+}
+
+.style2{
+    background-color: #161F22;
+    border-top:4px solid #F7C35E;
+    margin: 0 0 1rem;
+}
+.stack_card h3{
+    margin: 1rem 0;
+}
+.stack_card p{
+    margin: 1.3rem 0;
+    width: 100%;
+}
+
+.stack_card button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+.stack_card button img{
+    margin-left: 10px;
+}

@@ -1,0 +1,82 @@
+.form Button {
+    width: 100%;
+}
+
+.title {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #ffffff;
+
+}
+
+
+.p1 {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* letter-spacing: -0.02em; */
+    color: #FFFFFF;
+    padding: 1rem 0 2rem 0;
+
+}
+
+.checkboxDiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+}
+
+.checkboxDiv p {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.checkbox input {
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox label {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #111111;
+
+}
+
+.p3 {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 1rem;
+
+}
+
+.p3 span {
+    font-weight: bold;
+    color: #fff;
+}

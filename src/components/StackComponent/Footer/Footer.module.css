@@ -1,0 +1,85 @@
+.footer {
+    width: 100%;
+    margin: 7rem auto 0;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; */
+}
+
+.footer .last {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 4rem 0 0;
+    padding-bottom: 4rem;
+}
+
+.foot_first {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.courses p {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+
+.courses h4 {
+    margin-bottom: 1rem;
+}
+
+.foot_first img {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.foot_first figure {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 0;
+    width: 7%;
+}
+
+.foot_first figure img {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.foot_first p {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+}
+
+
+@media (max-width: 650px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 50%);
+        grid-row-gap: 10px;
+    }
+
+    .foot_first,
+    .courses {
+        width: 100%;
+    }
+}

@@ -1,0 +1,38 @@
+.Kick {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.Kick hr {
+    background-color: #657880;
+    border-color: #657880;
+    margin: 4rem auto 0;
+}
+
+.KickStart {
+    color: white;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+
+    background-color: #152830;
+}
+
+.KickStart h1 {
+    width: 60%;
+    margin: 1rem auto;
+    font-weight: 600;
+}
+
+.KickStart button {
+    background-color: #1D4ED8;
+    border: 1px solid #1D4ED8;
+    padding: 16px 44px;
+    color: white;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
