@@ -72,11 +72,14 @@
   .AuthBg {
     display: none;
   }
+
 }
 
 @media screen and (max-width: 555px) {
   .darkBg {
     /* padding: 4rem 0rem 0 0rem; */
+    
+    margin: 0px;
   }
 }
 
@@ -89,6 +92,8 @@
 .form Button {
   width: 100%;
 }
+
+
 
 .title {
   font-family: var(--font);

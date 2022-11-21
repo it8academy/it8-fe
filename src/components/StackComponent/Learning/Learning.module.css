@@ -34,3 +34,10 @@
 .words h4:last-child {
     margin-left: 2rem;
 }
+
+
+@media (max-width:768px){
+    .words h4{
+        font-size: 0.9rem;
+    }
+}

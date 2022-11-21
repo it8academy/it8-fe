@@ -4,6 +4,9 @@
     margin: 3rem auto;
 }
 
+.heroContainer a{
+    text-decoration: none;
+}
 .innerContainer {
     width: 100%;
     display: flex;

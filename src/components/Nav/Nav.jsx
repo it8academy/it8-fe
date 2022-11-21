@@ -1,5 +1,6 @@
 import classes from './Nav.module.css';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import {
   MdOutlineKeyboardArrowDown,
   MdOutlineKeyboardArrowUp,
@@ -11,9 +12,14 @@ const Nav = ({ toggle, handleToggle }) => {
   // const navigate = useNavigate();
   const [click, setclick] = useState(true);
 
+
   const handleClick = () => {
     setclick(!click);
   };
+
+  const [open , setOpen] = useState(false)
+
+const showCourse = () => setOpen(!open);
 
   // const handleLogout = async () => {
   //   try {
@@ -28,23 +34,36 @@ const Nav = ({ toggle, handleToggle }) => {
 
   return (
     <div className={toggle ? classes.navDesktop : classes.navMobile}>
+
+      {/* Nav Items */}
       <nav className={classes.nav}>
-        <NavLink to="/">Home</NavLink>
-        <NavLink className={classes.courses}>
+
+        <NavLink  onClick={showCourse} className={classes.coursesItem}>
           <span>Courses</span>
           <MdOutlineKeyboardArrowDown style={{ fontSize: '16px' }} />
+
+          {
+              open && (<div className={classes.course}>
+              <Link to="/frontEnd">Front End </Link>
+              <Link to="/backEnd">Back End</Link>
+              </div>
+            )}
+
         </NavLink>
-        <NavLink to="/tutor">Become a tutor</NavLink>
-        <NavLink to="/contact" className={classes.logout}>
+        <NavLink to="#Foot" onClick={handleToggle}><HashLink smooth to="#Foot">Contact Us</HashLink></NavLink>
+        {/* <NavLink to="/contact" className={classes.logout}>
           Contact-us
-        </NavLink>
+        </NavLink> */}
       </nav>
+
+      {/* Buttons */}
+
       <div className={classes.buttonFlex}>
-        <Link to="/login">
+        <Link to="/signup">
           <button className={classes.loginBtn1}>Enrol Now</button>
         </Link>
-        <Link to="/signup">
-          <button className={classes.loginBtn2}>Sign Up</button>
+        <Link to="/login">
+          <button className={classes.loginBtn2}>Log in</button>
         </Link>
       </div>
     </div>

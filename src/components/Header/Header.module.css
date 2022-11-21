@@ -44,13 +44,13 @@
 
 @media screen and (max-width: 1024px) {
   .header {
-    width: 90%;
+    width: 85%;
   }
 }
 
 @media screen and (max-width:770px) {
   .navContainer {
-    display: none;
+    display: block;
   }
 
   .hamburger {

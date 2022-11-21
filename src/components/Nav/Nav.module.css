@@ -24,11 +24,23 @@
   margin-right: 3rem;
 }
 
-.courses {
+.coursesItem {
   display: flex;
   align-items: center;
 }
 
+.course{
+  position: absolute;
+  background-color: #171717;
+  border-radius: 5px;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.course a{
+  margin: 0.5rem ;
+}
 .nav a:hover {
   color: #1D4ED8;
 }
@@ -37,6 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  
 }
 
 .loginBtn1 {
@@ -45,8 +58,10 @@
   background-color: #1D4ED8;
   font-size: 16px;
   font-family: var(--font);
+  border: 1px solid #1D4ED8;
   color: #FFFFFF;
   border-radius: 4px;
+  cursor: pointer;
 
 }
 
@@ -60,7 +75,17 @@
   color: #F5B436;
   margin-left: 10px;
   border-radius: 4px;
+  cursor: pointer;
 
+}
+
+.loginBtn1:hover {
+  background-color: #FFFFFF;
+  color: #1D4ED8;
+}
+.loginBtn2:hover {
+  border: 1px solid #1D4ED8;
+  color: #1D4ED8;
 }
 
 .user_div {
@@ -268,5 +293,17 @@
     z-index: 999;
     transition: all 3s ease-in-out;
   }
+
+  .course{
+    position: absolute;
+    background-color: #06062A;
+    border-radius: 5px;
+    padding: 2px 5px;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
 
 }

@@ -18,7 +18,11 @@
     margin: 1.3rem 0;
     width: 100%;
 }
-
+.stack_card a{
+    text-decoration: none;
+    color: white;
+    
+}
 .stack_card button{
     background-color: transparent;
     color: white;

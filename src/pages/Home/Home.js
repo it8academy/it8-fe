@@ -8,6 +8,7 @@ import rightarrow from '../../assets/Home/rightarrow.svg';
 import Stack from '../../components/Stack/Stack';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import { Stack_card } from '../../constant/index';
+import { Link } from 'react-router-dom';
 import { testimonialsData } from '../../constant/staticData';
 import KickStart from '../../components/StackComponent/KickStart/KickStart';
 import Footer from '../../components/StackComponent/Footer/Footer';
@@ -25,8 +26,8 @@ import '@splidejs/react-splide/css/core';
 const Home = () => {
   return (
     <div className={classes.head}>
-      {/* The section after hero */}
-      <section className={classes.best}>
+      {/* The why choose us page */}
+      {/* <section className={classes.best}>
         <h3>We are the best</h3> <h2>Why Choose Us</h2>
         <div className={classes.sect}>
           <figure>
@@ -73,9 +74,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      
       {/* The section for stack cards */}
-      <section className={classes.stack}>
+      <section className={classes.stack} id="allcourses">
         <h4>Tech Stack</h4> <h2>Available Courses</h2>
         <div className={classes.cards}>
           {Stack_card.map((item) => (
@@ -84,11 +86,16 @@ const Home = () => {
               css={item.css}
               word={item.word}
               title={item.title}
+              Link={item.link}
             />
           ))}
         </div>
+        <a href='#allcourses'>
         <button className={classes.allCourse}>See All Courses</button>
+        </a>
       </section>
+
+
       {/* The section for modes */}
       <section className={classes.mode}>
         <h4>Modes that suit you</h4>
@@ -101,7 +108,11 @@ const Home = () => {
               Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
               mi. Aliquam in hendrerit urna.
             </p>
-            <button>Get Started</button>
+            <Link to="/signup">
+            <button>      
+              Get Started
+              </button>
+              </Link>
           </div>
           <div className={classes.learnIMG}>
             <img src={learnPhysically} alt="learnPhysically" />
@@ -115,20 +126,27 @@ const Home = () => {
               Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
               mi. Aliquam in hendrerit urna.
             </p>
-            <button>Get Started</button>
+            <Link to="/signup">
+            <button>
+              Get Started
+            </button>
+              </Link>
           </div>
           <div className={classes.learnIMG}>
             <img src={online} alt="online" />
           </div>
         </div>
       </section>
+
+
       {/* The section for FAQ */}
+{/*       
       <section className={classes.faq}>
         <h4>Got Questions?</h4> <h2>Frequently Asked Questions</h2>
-        {/* <div className={classes.quest}>
+        <div className={classes.quest}>
           <h5>Would I pay for the tuition fee</h5>
           <img src={downarrow} alt="downarrow" />
-        </div> */}
+        </div>
         <div className={classes.questOpen}>
           <div className={classes.quest1}>
             <h5>Would I pay for the tuition fee</h5>
@@ -143,10 +161,6 @@ const Home = () => {
             mattis tellus. Nullam quis imperdiet augue.
           </p>
         </div>
-        {/* <div className={classes.quest}>
-          <h5>Would I pay for the tuition fee</h5>
-          <img src={downarrow} alt="downarrow" />
-        </div>
         <div className={classes.quest}>
           <h5>Would I pay for the tuition fee</h5>
           <img src={downarrow} alt="downarrow" />
@@ -158,11 +172,18 @@ const Home = () => {
         <div className={classes.quest}>
           <h5>Would I pay for the tuition fee</h5>
           <img src={downarrow} alt="downarrow" />
-        </div> */}
+        </div>
+        <div className={classes.quest}>
+          <h5>Would I pay for the tuition fee</h5>
+          <img src={downarrow} alt="downarrow" />
+        </div>
         <h2>Have more questions</h2> <button>Contact Us</button>
-      </section>
+      </section> */}
+
+
+
       {/* The section for become a tutor */}
-      <div className={classes.tutor}>
+      {/* <div className={classes.tutor}>
         <div className={classes.tutortext}>
           <h4>Earn and Impact</h4> <h2>Learn physically</h2>
           <p>
@@ -175,9 +196,12 @@ const Home = () => {
         <div className={classes.tutorIMG}>
           <img src={titor} alt="learnPhysically" />
         </div>
-      </div>
+      </div> */}
+
+
+
       {/* The section testimony */}
-      <section className={classes.testimonies}>
+      {/* <section className={classes.testimonies}>
         <div className={classes.testimonies_first}>
           <h4>What Users Are Saying</h4> <h2>Testimonials</h2>
           <p>
@@ -188,9 +212,9 @@ const Home = () => {
           <h6>Enrol to join the next ballers</h6> <button>Contact Us</button>
         </div>
         <div className={classes.testimonies_second}>
-          {/* <Splide aria-label="My Favorite Images"> */}
+          <Splide aria-label="My Favorite Images">
           {testimonialsData.map((item) => (
-            // <SplideSlide key={item.id}>
+            <SplideSlide key={item.id}>
             <Testimonials
               key={item.id}
               bg_color={item.bg_color}
@@ -198,11 +222,12 @@ const Home = () => {
               details={item.details}
               name={item.name}
             />
-            // </SplideSlide>
+            </SplideSlide>
           ))}
-          {/* </Splide> */}
+          </Splide>
         </div>
-      </section>
+      </section> */}
+      
       <KickStart /> <Footer />
     </div>
   );

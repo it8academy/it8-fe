@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import FormGroup from '../../../components/FormGroup/FormGroup';
 import styles from './SignUp.module.css';
 import Button from '../../../components/Button/Button';
-import Google from '../../../components/Button/Google';
+// import Google from '../../../components/Button/Google';
 import { Link, useNavigate } from 'react-router-dom';
 // import Modal from 'components/Modal/Modal';
 // import openemail from 'assets/open_email.png';
@@ -86,7 +86,7 @@ const SignUp = (props) => {
         </p>
         <Button>{loading ? <Loading /> : 'Create Account'}</Button>
       </form>
-      <Google />
+      {/* <Google /> */}
       <Link to="/login">
         <p className={styles.p3}>Already have an account? Login</p>
       </Link>

@@ -1,15 +1,16 @@
-import Header from '../../components/Header/Header';
+// import Header from '../../components/StackComponent/Header/Header';
 import Hero from '../../components/StackComponent/Hero/Hero';
-import classes from './ProductDesign.module.css';
+import classes from './BackEnd.module.css';
 import hero_image from '../../assets/hero_ui_ux.svg';
 import Learning from '../../components/StackComponent/Learning/Learning';
 import Testimony from '../../components/StackComponent/Testimony/Testimony';
 import KickStart from '../../components/StackComponent/KickStart/KickStart';
 import Footer from '../../components/StackComponent/Footer/Footer';
-import { ProductLearning } from '../../constant/index';
+import { BackEnd_Engineering } from '../../constant/index';
 import top from '../../assets/top.svg';
+import Header from '../../components/Header/Header';
 
-const ProductDesign = () => {
+const BackEnd = () => {
   return (
     <div className={classes.head} id="top">
       <a href="#top" className={classes.top}>
@@ -17,14 +18,13 @@ const ProductDesign = () => {
       </a>
       <Header />
       <Hero
-        title="Product Design"
-        title2="(UI/UX)"
-        text="The definition of product design describes the process of imagining,
-      creating, and iterating products that solve users’ problems or address
-      specific needs in a given market."
+        title="Backend"
+        title2="Engineering"
+        text="The backend track is taught by an experienced instructor in the field. You will learn by building real life project and move from zero knowledge of software development to developing confidence in the field by learning and using the various software development techniques and frameworks."
         img={hero_image}
+        file="../../../assets/backendDoc.pdf"
       />
-      <Learning course={ProductLearning} />
+      <Learning course={BackEnd_Engineering} />
       <Testimony />
       <KickStart />
       <div  className={classes.footer}>
@@ -34,4 +34,4 @@ const ProductDesign = () => {
   );
 };
 
-export default ProductDesign;
+export default BackEnd;

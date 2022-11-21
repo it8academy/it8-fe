@@ -25,7 +25,9 @@ const ProductMgt = () => {
       <Learning course={ProductManagement} />
       <Testimony />
       <KickStart />
+      <div  className={classes.footer}>
       <Footer />
+      </div>
     </div>
   );
 };
