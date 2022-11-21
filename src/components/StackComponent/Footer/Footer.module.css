@@ -42,7 +42,7 @@ footer {
 }
 
 .foot_first img {
-    width: 30%;
+    width: 35%;
     margin-bottom: 1rem;
 }
 
@@ -50,7 +50,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 1rem 0 0;
-    width: 7%;
+    width: 35%;
 }
 
 .foot_first figure img {
@@ -62,11 +62,15 @@ footer {
     margin: 0.5rem 0;
     font-size: 0.8rem;
 }
+.foot_first a {
+    margin-right: 10px;
+}
 
-a {
+.courses a {
     text-decoration: none;
     color: white;
     font-size: 0.8rem;
+    line-height: 30px;
     margin: 0.5rem 0;
 }
 

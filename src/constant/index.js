@@ -204,45 +204,119 @@ export const FrontEnd_Engineering = [
  
 ];
 
+//  BackEnd
+
+export const BackEnd_Engineering = [
+  {
+    id: 1,
+    num: "01",
+    title: "JavaScript Primer",
+    text: "In this module, you will have a refresher course on JavaScript (Data types, functions, loops, Object-Oriented Programming)",
+  },
+
+  {
+    id: 2,
+    num: "02",
+    title: "Setup Development Environment",
+    text: "In the module, you will be introduced to backend Development tools and environments like Terminal, Node.js, Postman API test tool,IDE (Visual   studio Code)." 
+  },
+
+  {
+    id: 3,
+    num: "03",
+    title: "Node.js Documentation",
+    text: "In this chapter, you will be introduced to the official Node.js Documentation where you can find and use its in-built modules."
+},
+
+  {
+    id: 4,
+    num: "04",
+    title: "Node.js Concepts",
+    text: " In this chapter, you will be introduced to  In this chapter, you will be introduced to thread, Modules, Package manager."
+},
+
+  {
+    id: 5,
+    num: "05",
+    title: "Deep Dive Node.js Module",
+    text: "In this modules, you will be exposed to Node.js in-built modules such as the file system, http, url, crypto and os in building a RESTFUL API." 
+},
+
+  {
+    id: 6,
+    num: "06",
+    title: "Intro to Express.js",
+    text: "In this chapter, you will be introduced to the Express.js web application framework that provides a robust set of features for web and mobile applications."
+ },
+
+  {
+    id: 7,
+    num: "07",
+    title: "Intro to Database",
+    text: "In this chapter, you will be introduced to different database that can be used to connect and hold data while building a RESTFUL API."
+ },
+
+  {
+    id: 8,
+    num: "08",
+    title: "Testing API",
+    text: "In this module, you will be introduced to different testing concepts like Integration test, Unit test and Functional test that helps build software that meets requirements without defects is testing."
+  },
+
+  {
+    id: 9,
+    num: "09",
+    title: "Project",
+    text: "In this last module, you will build an API that solves a real-world problem"
+},
+
+];
+
 
 
 //Stack card
 
 export const Stack_card = [
-  {
-    id:1,
-    title: "Product Management",
-    css: "style1",
-    word: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. "
-  },
-  {
-    id:2,
-    title: "Product Design",
-    css: "style2",
-    word: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. "
-  },
+  // {
+  //   id:1,
+  //   title: "Product Management",
+  //   css: "style1",
+  //    link: "/frontEnd",
+  //   word: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. "
+  // },
+  // {
+  //   id:2,
+  //   title: "Product Design",
+  //   css: "style2",
+  //  link: "/frontEnd",
+  //   word: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. "
+  // },
   {
     id:3,
-    title: "Frontend Engineering",
-    css: "style2",
+    title: "Backend Engineering",
+    css: "style1",
+    link: "/backEnd",
     word: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. "
   },
   {
     id:4,
-    title: "Backend Engineering",
-    css: "style1",
-    word: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. "
-  },
-  {
-    id:5,
-    title: "Mobile Development",
-    css: "style1",
-    word: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. "
-  },
-  {
-    id:6,
-    title: "Brand Identity Design",
+    title: "Frontend Engineering",
     css: "style2",
+    link: "/frontEnd",
     word: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. "
   },
+  // {
+  //   id:5,
+  //   title: "Mobile Development",
+  //   css: "style1",
+  //    link: "/frontEnd",
+  //   word: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. "
+  // },
+  // {
+  //   id:6,
+  //   title: "Brand Identity Design",
+  //   css: "style2",
+  //   link: "/frontEnd",
+  //   word: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. "
+  // },
 ]

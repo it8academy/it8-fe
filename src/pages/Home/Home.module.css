@@ -6,6 +6,10 @@
     margin: auto;
 }
 
+.head a{
+    text-decoration: none;
+}
+
 .top img {
     position: fixed;
     top: 60%;
@@ -76,7 +80,7 @@
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, 43%);
-    gap: 100px;
+    gap: 80px;
 }
 
 .stack .allCourse {
@@ -362,7 +366,7 @@
 }
 
 
-.testimonials_second
+/* .testimonials_second */
 /* 
 .testimonies_second h5 {
     font-style: normal;
@@ -399,9 +403,11 @@
 
 @media screen and (max-width:765px) {
     .cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 80%);
-        gap: 100px;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        /* grid-template-columns: repeat(auto-fill, 90%);
+        gap: 100px; */
     }
 }
 
@@ -452,4 +458,5 @@
         width: 80%;
         margin: 1rem auto;
     }
+  
 }

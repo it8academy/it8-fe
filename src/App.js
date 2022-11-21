@@ -7,6 +7,7 @@ import AllCourses from './components/AllCourses/AllCourses';
 import ProductDesign from './pages/ProductDesign/ProductDesign';
 import ProductMgt from './pages/ProductMgt/ProductMgt';
 import FrontEnd from './pages/FrontEnd/FrontEnd';
+import BackEnd from './pages/BackEnd/BackEnd';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Route path="/productDesign" element={<ProductDesign />} />
       <Route path="/productMgt" element={<ProductMgt />} />
       <Route path="/frontEnd" element={<FrontEnd />} />
+      <Route path="/backEnd" element={<BackEnd />} />
     </Routes>
   );
 }

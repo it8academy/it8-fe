@@ -1,7 +1,9 @@
 import classes from "./Hero.module.css";
+import { Link } from "react-router-dom";
 
 
-const Hero = ({title,title2,text,img}) => {
+
+const Hero = ({title,title2,text,img,file}) => {
   return (
     <div className={classes.Hero}>
       <div className={classes.text}>
@@ -11,8 +13,12 @@ const Hero = ({title,title2,text,img}) => {
           {text}
         </p>
         <div className={classes.buttons}>
-            <button>Enroll Now</button>
-            <button>Download Brochure</button>
+        <Link to="/signup">
+          <button  className={classes.EnrolBtn}>Enrol Now</button>
+        </Link>
+        <a href={file} download>
+            <button className={classes.DownloadBtn}>Download Brochure</button>
+            </a>
         </div>
       </div>
       <figure>
