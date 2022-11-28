@@ -57,9 +57,9 @@ const SignUp = (props) => {
       course,
       mode_of_learning,
       tx_ref: Date.now().toString(),
-      course_amount: 1,
+      course_amount,
       // tx_ref: "LiveCardTest",
-      // transaction_id: "288200108",
+      transaction_id: "288200108",
     };
     signupForm.map((input) => (data[input.name] = input.value));
 
@@ -132,6 +132,10 @@ const SignUp = (props) => {
   // console.log(handleFlutterPayment);
 
  
+  let course_amount = 0 
+
+  if (course === "frontend engineering") course_amount = 300 
+  else if (course === "backend engineering" ) course_amount = 150
 
   return (
     <>
@@ -160,10 +164,12 @@ const SignUp = (props) => {
 
         {/* <h5>{currentSkill}</h5> */}
 
+
+
         {course === "frontend engineering" ? (
-          <h5>You are choosing front end for #200</h5>
+          <h5>You are choosing front end for #{course_amount}</h5>
         ) : course === "backend engineering" ? (
-          <h5>You are choosing Back end for #100</h5>
+          <h5>You are choosing Back end for #{course_amount}</h5>
         ) : (
           ""
         )}
