@@ -2,7 +2,7 @@ import React from "react";
 import { useState, 
   // useEffect 
 } from "react";
-import axios from "axios";
+// import axios from "axios";
 import FormGroup from "../../../components/FormGroup/FormGroup";
 import styles from "./SignUp.module.css";
 import Button from "../../../components/Button/Button";
@@ -12,8 +12,8 @@ import { Link, useNavigate } from "react-router-dom";
 // import openemail from 'assets/open_email.png';
 // import Close from 'assets/close.png';
 import { registerData } from "../../../constant/authData";
-// import { registerUser } from "../../../services/auth";
-// import { toast } from 'react-toastify';
+import { registerUser } from "../../../services/auth";
+import { toast } from 'react-toastify';
 import Loading from "../../../components/Loading/Loading";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 
@@ -59,7 +59,7 @@ const SignUp = (props) => {
       tx_ref: Date.now().toString(),
       course_amount,
       // tx_ref: "LiveCardTest",
-      transaction_id: "288200108",
+      // transaction_id: "288200108",
     };
     signupForm.map((input) => (data[input.name] = input.value));
 
@@ -79,11 +79,11 @@ const SignUp = (props) => {
 
     try {
       setLoading(true);
-      const res = axios.post('https://it8-academy.herokuapp.com/api/v1/auth/register', data);
-      // const response = await registerUser(data);
-      // toast.success('Kindly Check your email to verify your account');
-      const info = await res.json()
-      console.log(info);
+      // const res = axios.post('https://it8-academy.herokuapp.com/api/v1/auth/register', data);
+      const res = await registerUser(data);
+      // const info = await res.json()
+      toast.success('Kindly Check your email to verify your account');
+      console.log(res);
       // setLoading(false);
       // console.log(response);
       // setShowModal(true);
@@ -96,7 +96,7 @@ const SignUp = (props) => {
       //   onClose: () => {},
       // });
 
-      navigate("/login");
+      navigate("/");
     } catch (error) {
       setLoading(false);
       // toast.error(error.response.data.message);
@@ -134,7 +134,7 @@ const SignUp = (props) => {
  
   let course_amount = 0 
 
-  if (course === "frontend engineering") course_amount = 300 
+  if (course === "frontend engineering") course_amount = 1 
   else if (course === "backend engineering" ) course_amount = 150
 
   return (
@@ -210,7 +210,7 @@ const SignUp = (props) => {
       </form>
       {/* <Google /> */}
       <Link to="/login">
-        <p className={styles.p3}>Already have an account? Login</p>
+        <p className={styles.p3}>Already have an account? <span>Login</span></p>
       </Link>
     </>
   );

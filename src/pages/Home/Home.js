@@ -104,9 +104,8 @@ const Home = () => {
           <div className={classes.learnPHY}>
             <h2>Learn physically</h2>
             <p>
-              What our graduates are saying about iterate keeps us iterating
-              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-              mi. Aliquam in hendrerit urna.
+            Easily learn at the workspace with adequate facilities.
+              Interact with colleagues and learn with ease.
             </p>
             <Link to="/signup">
             <button>      
@@ -122,9 +121,9 @@ const Home = () => {
           <div className={classes.learnPHY}>
             <h2>Learn online</h2>
             <p>
-              What our graduates are saying about iterate keeps us iterating
-              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-              mi. Aliquam in hendrerit urna.
+            Easily learn in the comfort of your home from anywhere. 
+            
+            Classes are live and very interactive.
             </p>
             <Link to="/signup">
             <button>

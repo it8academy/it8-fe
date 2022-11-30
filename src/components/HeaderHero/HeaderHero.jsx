@@ -10,10 +10,7 @@ const HeaderHero = () => {
         <div className={classes.leftDiv}>
           <h1>Start your tech journey without delay with us</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-            fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-            vitae mattis tellus. Nullam quis imperdiet augue.
+          Sign up now to begin to access quality tech training at an affordable rate.
           </p>
           <div className={classes.btn}>
           <Link to="/signup">

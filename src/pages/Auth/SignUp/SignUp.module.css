@@ -64,6 +64,11 @@
 
 }
 
+.p3 span {
+    font-weight: bold;
+    color: #fff;
+}
+
 .checkbox {
     display: flex;
     align-items: center;
