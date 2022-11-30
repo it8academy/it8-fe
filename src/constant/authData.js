@@ -1,7 +1,7 @@
 export const registerData = [
   {
     id: 1,
-    name: 'firstName',
+    name: 'first_name',
     type: 'text',
     placeholder: 'First name',
     errorMessage:
@@ -13,7 +13,7 @@ export const registerData = [
   },
   {
     id: 2,
-    name: 'lastName',
+    name: 'last_name',
     type: 'text',
     placeholder: 'Last name',
     errorMessage:
@@ -25,7 +25,7 @@ export const registerData = [
   },
   {
     id: 3,
-    name: 'phoneNumber',
+    name: 'phone_number',
     type: 'text',
     placeholder: '080XXXXXXXX',
     errorMessage:

@@ -296,14 +296,14 @@ export const Stack_card = [
     title: "Backend Engineering",
     css: "style1",
     link: "/backEnd",
-    word: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. "
+    word: "The Backend Engineering program is designed for anyone interested in starting a career as a software engineer. It spans a period of 3 months and classes would be held on weekends(Friday to Sunday). You can learn onsite or online. You will also be provided all materials and access to a community that would be needed to make your tech journey easy."
   },
   {
     id:4,
     title: "Frontend Engineering",
     css: "style2",
     link: "/frontEnd",
-    word: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. "
+    word: "The frontend engineering program is designed for anyone with or without basic programming skills. Training spans a period of 3 months. Classes would be held on weekends (Friday to Sunday) You can learn onsite or online"
   },
   // {
   //   id:5,

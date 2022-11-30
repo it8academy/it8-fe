@@ -16,6 +16,7 @@ const FormGroup = ({
     setFocused(true);
   };
 
+
   return (
     <div className="form-group">
       {/* <label htmlFor={name} className={styles.formLabel}>
