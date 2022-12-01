@@ -3,7 +3,7 @@ import Hero from '../../components/StackComponent/Hero/Hero';
 import classes from './BackEnd.module.css';
 import hero_image from '../../assets/hero_ui_ux.svg';
 import Learning from '../../components/StackComponent/Learning/Learning';
-import Testimony from '../../components/StackComponent/Testimony/Testimony';
+// import Testimony from '../../components/StackComponent/Testimony/Testimony';
 import KickStart from '../../components/StackComponent/KickStart/KickStart';
 import Footer from '../../components/StackComponent/Footer/Footer';
 import { BackEnd_Engineering } from '../../constant/index';
@@ -25,7 +25,7 @@ const BackEnd = () => {
         file="../../../assets/backendDoc.pdf"
       />
       <Learning course={BackEnd_Engineering} />
-      <Testimony />
+      {/* <Testimony /> */}
       <KickStart />
       <div  className={classes.footer}>
       <Footer />
