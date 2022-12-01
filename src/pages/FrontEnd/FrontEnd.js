@@ -3,7 +3,7 @@ import Hero from "../../components/StackComponent/Hero/Hero";
 import classes from "./FrontEnd.module.css";
 import frontend from "../../assets/frontend.svg";
 import Learning from "../../components/StackComponent/Learning/Learning";
-import Testimony from "../../components/StackComponent/Testimony/Testimony";
+// import Testimony from "../../components/StackComponent/Testimony/Testimony";
 import KickStart from "../../components/StackComponent/KickStart/KickStart";
 import Footer from "../../components/StackComponent/Footer/Footer";
 import { FrontEnd_Engineering } from "../../constant/index";
@@ -25,7 +25,7 @@ const FrontEnd = () => {
         file="../../../assets/frontEndDoc.pdf"
       />
       <Learning course={FrontEnd_Engineering} />
-      <Testimony />
+      {/* <Testimony /> */}
       <KickStart />
       <div className={classes.footer}>
         <Footer />
