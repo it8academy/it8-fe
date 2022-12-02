@@ -22,7 +22,7 @@ const BackEnd = () => {
         title2="Engineering"
         text="The backend track is taught by an experienced instructor in the field. You will learn by building real life project and move from zero knowledge of software development to developing confidence in the field by learning and using the various software development techniques and frameworks."
         img={hero_image}
-        file="../../../assets/backendDoc.pdf"
+        file="/file/backendDoc.pdf"
       />
       <Learning course={BackEnd_Engineering} />
       {/* <Testimony /> */}
