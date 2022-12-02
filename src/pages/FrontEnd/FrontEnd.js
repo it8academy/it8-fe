@@ -22,7 +22,7 @@ const FrontEnd = () => {
         title2="Engineering"
         text="Start your journey as a Frontend Developer. You’ll learn all you need to know to become a Frontend Developer and build exciting portfolios while learning the fundmentals of HTML, CSS, JavaScript and React."
         img={frontend}
-        file="../../../assets/frontEndDoc.pdf"
+        file="/file/frontEndDoc.pdf"
       />
       <Learning course={FrontEnd_Engineering} />
       {/* <Testimony /> */}
