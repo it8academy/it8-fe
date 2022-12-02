@@ -15,7 +15,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/it8academy/">
               <img src={instagram} alt="instagram" />
             </a>
-            <a href="https://www.instagram.com/it8academy/">
+            {/* <a href="https://www.instagram.com/it8academy/">
               <img src={twitter} alt="twitter" />
             </a>
             <a href="https://www.instagram.com/it8academy/">
@@ -23,7 +23,7 @@ const Footer = () => {
             </a>
             <a href="https://www.instagram.com/it8academy/">
               <img src={facebook} alt="facebook" />
-            </a>
+            </a> */}
           </figure>
           <p>Tel : +2348133832003</p>
           <p>Tel : +2348168623014</p>
