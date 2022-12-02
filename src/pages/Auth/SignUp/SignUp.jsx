@@ -134,8 +134,8 @@ const SignUp = (props) => {
  
   let course_amount = 0 
 
-  if (course === "frontend engineering") course_amount = "120,000"
-  else if (course === "backend engineering" ) course_amount = "120,000"
+  if (course === "frontend engineering") course_amount = 120000
+  else if (course === "backend engineering" ) course_amount = 120000
 
   return (
     <>
