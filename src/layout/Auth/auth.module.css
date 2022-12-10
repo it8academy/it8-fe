@@ -2,7 +2,6 @@
   height: 100vh;
   display: flex;
   background-color: #171717;
-  /* justify-content: space-between; */
 }
 
 .logoContainer span {
@@ -16,7 +15,7 @@
 .logoContainer {
   display: flex;
   align-items: center;
-  padding: 3rem 0 6rem 0;
+  padding: 2rem 0 3rem 0;
 }
 
 .main a {
@@ -36,7 +35,6 @@
 
 .darkBg {
   width: 50%;
-  /* padding: 4rem 3rem 4rem 7rem; */
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -52,117 +50,29 @@
   height: 0;
 }
 
-/* .whitepart Button2 {
-  align-items: center;
-} */
-
-@media screen and (max-width: 979px) {
-  .darkBg {
-    /* padding: 4rem 3rem 0 3rem; */
-
-  }
-}
-
 @media screen and (max-width: 768px) {
   .darkBg {
+    width: 100%;
+  }
+
+  .darkBg_content {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
   }
 
   .AuthBg {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 555px) {
   .darkBg {
-    /* padding: 4rem 0rem 0 0rem; */
-    
-    margin: 0px;
+    padding: 0rem 0rem 0 0rem;
   }
 }
 
 @media screen and (max-width: 387px) {
   .darkBg {
-    width: 90%;
+    width: 100%;
   }
-}
-
-.form Button {
-  width: 100%;
-}
-
-
-
-.title {
-  font-family: var(--font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: #111111;
-
-}
-
-.p1 {
-  font-family: var(--font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: rgba(17, 17, 17, 0.5);
-  padding: 1rem 0 2rem 0;
-
-}
-
-.checkboxDiv {
-  display: flex;
-  justify-content: space-between;
-}
-
-.checkboxDiv p {
-  font-family: var(--font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #111111;
-
-}
-
-.checkbox {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding-bottom: 1rem;
-}
-
-.checkbox input {
-  width: 20px;
-  height: 20px;
-}
-
-.checkbox label {
-  font-family: var(--font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #111111;
-}
-
-.p3 {
-  font-family: var(--font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: rgba(17, 17, 17, 0.5);
-  padding: 2rem 0;
-}
-
-.rent {
-  color: #7453EE;
 }

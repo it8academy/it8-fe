@@ -1,13 +1,9 @@
 import React from 'react';
-
 import { Link, useNavigate } from 'react-router-dom';
 import FormGroup from '../../../components/FormGroup/FormGroup';
-
 import { useState, useEffect } from 'react';
 import Button from '../../../components/Button/Button';
 import styles from './Login.module.css';
-// import Google from '../../../components/Button/Google';
-
 import { loginData } from '../../../constant/authData';
 
 // import { loginUser } from 'services/auth';
@@ -52,7 +48,7 @@ const Login = (props) => {
     // try {
     //   setLoading(true);
     //   const response = await loginUser(data);
-    //   toast.success('Welcome to EasyRent!');
+    //   toast.success('Welcome to iT8!');
     //   setIsLoggedIn(true);
     //   localStorage.setItem('token', response.data.token);
     //   setLoading(false);
@@ -84,7 +80,6 @@ const Login = (props) => {
         </div>
         <Button> {loading ? <Loading /> : 'Login'}</Button>
       </form>
-      {/* <Google /> */}
       <p className={styles.p3}>
         Don't have an account?
         <Link to="/signup">

@@ -1,9 +1,7 @@
-import styles from './auth.module.css';
-
-import { Link } from 'react-router-dom';
-import Logo from '../../assets/logo.png';
-import signupImage from '../../assets/signupImage.jpg';
-// import Button from 'components/Button/Button2';
+import styles from "./auth.module.css";
+import { Link } from "react-router-dom";
+import Logo from "../../assets/logo.png";
+import signupImage from "../../assets/signupImage.jpg";
 
 const Auth = ({ props, children }) => {
   return (

@@ -9,9 +9,7 @@
     font-size: 30px;
     line-height: 37px;
     color: #ffffff;
-
 }
-
 
 .p1 {
     font-family: var(--font);
@@ -19,7 +17,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    /* letter-spacing: -0.02em; */
     color: #FFFFFF;
     padding: 1rem 0 2rem 0;
 
