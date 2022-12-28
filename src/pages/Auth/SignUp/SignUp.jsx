@@ -27,15 +27,21 @@ const SignUp = (props) => {
     });
     setSignupForm(updatedArr);
   };
-  const data = {
-    course,
-    mode_of_learning,
-    tx_ref: Date.now().toString(),
-    course_amount,
-  };
+  // const data = {
+  //   course,
+  //   mode_of_learning,
+  //   tx_ref: Date.now().toString(),
+  //   course_amount,
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const data = {
+      course,
+      mode_of_learning,
+      tx_ref: Date.now().toString(),
+      course_amount,
+    };
     signupForm.map((input) => (data[input.name] = input.value));
     console.log(data);
     try {

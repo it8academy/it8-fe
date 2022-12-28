@@ -33,6 +33,7 @@ function App() {
       <Route path="/productMgt" element={<ProductMgt />} />
       <Route path="/frontEnd" element={<FrontEnd />} />
       <Route path="/backEnd" element={<BackEnd />} />
+      <Route path="*" element={<LandingPage />} />
     </Routes>
   );
 }
