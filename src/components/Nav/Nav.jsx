@@ -62,9 +62,9 @@ const showCourse = () => setOpen(!open);
         <Link to="/signup">
           <button className={classes.loginBtn1}>Enrol Now</button>
         </Link>
-        <Link to="/login">
+        {/* <Link to="/login">
           <button className={classes.loginBtn2}>Log in</button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
