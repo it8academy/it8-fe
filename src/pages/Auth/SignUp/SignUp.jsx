@@ -72,8 +72,8 @@ const SignUp = (props) => {
   const handleFlutterPayment = useFlutterwave(config);
   // console.log(handleFlutterPayment);
 
-  if (course === "frontend engineering") course_amount = 120000;
-  else if (course === "backend engineering") course_amount = 120000;
+  if (course === "frontend engineering") course_amount = 70000;
+  else if (course === "backend engineering") course_amount = 70000;
 
   return (
     <>
@@ -119,7 +119,7 @@ const SignUp = (props) => {
         >
           <option value="">Mode of Learning</option>
           <option value="online">Online</option>
-          <option value="physical"> Physical </option>
+          {/* <option value="physical"> Physical </option> */}
         </select>
         <p className={styles.p2}>
           By signing up, you’re agreeing to our Terms & Conditions and Privacy
