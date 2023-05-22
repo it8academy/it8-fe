@@ -15,6 +15,8 @@
 
 .main-nav ul {
     display: flex;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
     gap: 20px;
     font-size: 20px;
@@ -40,6 +42,7 @@ h2 {
 
 .person {
     display: flex;
+    justify-content: center;
     gap: 20px;
     align-items: center;
 }
@@ -59,6 +62,7 @@ h2 {
 
 .navshow {
     display: grid;
+    align-items: center;
     position: absolute;
     background-color: #1D242D;
     left: 0;
@@ -80,8 +84,8 @@ h2 {
     border-bottom: 1px solid #fff;
 }
 
-.navshow ul li:nth-of-type(4){
-color: #FF7474;
+.navshow ul li:nth-of-type(4) {
+    color: #FF7474;
 }
 
 .navshow ul li a {
@@ -92,6 +96,51 @@ color: #FF7474;
 .icon {
     text-align: end;
     padding-bottom: 10px;
+}
+
+.user {
+    background-color: #fff;
+    padding: 15px;
+    width: 13vw;
+    color: #000;
+    box-shadow: 2px 3px 12px #888888;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person img{
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.user-li {
+    position: relative;
+}
+
+.user ul{
+    list-style-type: none;
+}
+.user li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.user li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.user li:hover{
+   background-color: #f2f5fd; 
+}
+.user {
+    position: absolute;
+    left: -64px;
+    top:64px;
 }
 
 @media screen and (max-width:768px) {

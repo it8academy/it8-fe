@@ -1,85 +1,96 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import FormGroup from '../../../components/FormGroup/FormGroup';
-import { useState, useEffect } from 'react';
-import Button from '../../../components/Button/Button';
+import { useState } from 'react';
 import styles from './Login.module.css';
-import { loginData } from '../../../constant/authData';
-
-// import { loginUser } from 'services/auth';
-// import { useContextState } from 'context/context';
-// import { toast } from 'react-toastify';
-import Loading from '../../../components/Loading/Loading';
-
+import useAuthStore from './useStore';
+import { toast } from 'react-toastify';
+import { Formik, Form, Field } from 'formik';
+import * as Yup from 'yup';
+import { loginUser } from '../../../services/auth';
 const Login = (props) => {
   const navigate = useNavigate();
-  // const { setIsLoggedIn } = useContextState();
-  const [type, setType] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [loginForm, setLoginForm] = useState(loginData);
+  const { setToken, setAuthUser } = useAuthStore();
+  const [submiting, setSubmiting] = useState(false);
+  const LoginSchema = Yup.object().shape({
+    password: Yup.string()
+      .min(8, 'The password is not what you used in signing in, Is it?')
+      .max(20, 'Too Long!')
+      .required('This field is Required'),
+    email: Yup.string()
+      .email('This email is invalid')
+      .required('This field is Required'),
+  });
 
-  const onChange = (e, index) => {
-    const updatedArr = loginForm.map((item, i) => {
-      if (i === index) {
-        item.value = e.target.value;
-      }
-
-      return item;
-    });
-    setLoginForm(updatedArr);
-  };
-
-  useEffect(() => {
-    const updatedArr = loginData.map((item, i) => {
-      if (i === 1) {
-        if (type) item.type = 'text';
-        else item.type = 'password';
-      }
-
-      return item;
-    });
-    setLoginForm(updatedArr);
-  }, [type]);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    // const data = {};
-    // loginForm.forEach((item) => (data[item.name] = item.value));
-    // try {
-    //   setLoading(true);
-    //   const response = await loginUser(data);
-    //   toast.success('Welcome to iT8!');
-    //   setIsLoggedIn(true);
-    //   localStorage.setItem('token', response.data.token);
-    //   setLoading(false);
-    //   navigate('/');
-    // } catch (error) {
-    //   setLoading(false);
-    //   toast.error(error.response.data.message);
-    // }
+  const handlesubmit = async (payload) => {
+    setSubmiting(true);
+    try {
+      const res = await loginUser(payload);
+      setToken(res?.data.token);
+      setAuthUser(res?.data);
+      navigate('/dashboard');
+      toast.success(res?.data.message);
+    } catch (error) {
+      toast.error(error?.response.data.message);
+    }
+    setSubmiting(false);
   };
 
   return (
     <>
-      <form className={styles.form} onSubmit={handleSubmit}>
-        <h1 className={styles.title}>Welcome Back</h1>
-        <p className={styles.p1}>Continue your tech journey from here</p>
-        {loginData.map((input, index) => (
-          <FormGroup
-            key={input.id}
-            {...input}
-            loginform={loginForm[input.name]}
-            onChange={(e) => onChange(e, index)}
-          />
-        ))}
-        <div className={styles.checkboxDiv}>
-          <div></div>
-          <Link to="/resetpassword">
-            <p>Forgot password?</p>
-          </Link>
-        </div>
-        <Button> {loading ? <Loading /> : 'Login'}</Button>
-      </form>
+      <Formik
+        initialValues={{
+          email: '',
+          password: '',
+        }}
+        validationSchema={LoginSchema}
+        onSubmit={(value) => {
+          console.log(value);
+          handlesubmit(value);
+        }}>
+        {({ errors, touched }) => (
+          <Form className={styles.form} noValidate>
+            <h1 className={styles.title}>Welcome Back</h1>
+            <p className={styles.p1}>Continue your tech journey from here</p>
+            <div className="form-group">
+              <label className={styles.formLabel}>Email</label>
+              <Field
+                className={`${styles.formInput} ${
+                  errors.email && styles.errorBorder
+                }`}
+                type="email"
+                name="email"
+              />
+            </div>
+            {errors.email && touched.email ? (
+              <div className={styles.error}>{errors.email}</div>
+            ) : null}
+            <div className="form-group">
+              <label className={styles.formLabel}>Password</label>
+              <Field
+                className={`${styles.formInput} ${
+                  errors.password && styles.errorBorder
+                }`}
+                type="password"
+                name="password"
+              />
+            </div>
+            {errors.password && touched.password ? (
+              <div className={styles.error}>{errors.password}</div>
+            ) : null}
+
+            <div className={styles.checkboxDiv}>
+              <div></div>
+              <Link to="/resetpassword">
+                <p>Forgot password?</p>
+              </Link>
+            </div>
+            <button type="submit" className={styles.btn } disabled={submiting}>
+              {submiting ? '...' : 'Login'}
+            </button>
+           
+          </Form>
+        )}
+      </Formik>
       <p className={styles.p3}>
         Don't have an account?
         <Link to="/signup">

@@ -7,3 +7,9 @@ export const registerUser = async (payload) => {
     return response;
   };
 
+
+  export const loginUser = async (payload) => {
+    const response = baseUrl.post('/login', payload);
+    return response;
+  };
+
