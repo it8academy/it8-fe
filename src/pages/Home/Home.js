@@ -1,18 +1,18 @@
 import classes from './Home.module.css';
-import bestImage from '../../assets/Home/bestImage.svg';
+// import bestImage from '../../assets/Home/bestImage.svg';
 import learnPhysically from '../../assets/Home/learnPhysically.svg';
 import online from '../../assets/Home/online.svg';
-import titor from '../../assets/Home/titor.svg';
-import downarrow from '../../assets/Home/downarrow.svg';
-import rightarrow from '../../assets/Home/rightarrow.svg';
+// import titor from '../../assets/Home/titor.svg';
+// import downarrow from '../../assets/Home/downarrow.svg';
+// import rightarrow from '../../assets/Home/rightarrow.svg';
 import Stack from '../../components/Stack/Stack';
-import Testimonials from '../../components/Testimonials/Testimonials';
+// import Testimonials from '../../components/Testimonials/Testimonials';
 import { Stack_card } from '../../constant/index';
 import { Link } from 'react-router-dom';
-import { testimonialsData } from '../../constant/staticData';
+// import { testimonialsData } from '../../constant/staticData';
 import KickStart from '../../components/StackComponent/KickStart/KickStart';
 import Footer from '../../components/StackComponent/Footer/Footer';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+// import { Splide, SplideSlide } from '@splidejs/react-splide';
 // Default theme
 import '@splidejs/react-splide/css';
 

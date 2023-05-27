@@ -2,15 +2,14 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import HeaderHero from '../../components/HeaderHero/HeaderHero';
 import Home from '../Home/Home';
-import top from '../../assets/top.svg';
-import classes from './LandingPage.module.css';
+// import top from '../../assets/top.svg';
 
 const LandingPage = () => {
   return (
     <>
-     <a href="#top" className={classes.top}>
+     {/* <a href="#top" className={classes.top}>
         <img src={top} alt="top" />
-      </a>
+      </a> */}
       <Header />
       <HeaderHero />
       <Home />

@@ -2,6 +2,7 @@ import React from 'react';
 import backend from '../../assets/backend image.png';
 import './CourseDashboard.css';
 import useAuthStore from '../../pages/Auth/Login/useStore';
+import { Link } from 'react-router-dom';
 const CourseDashboard = () => {
   const { authUser } = useAuthStore();
   return (
@@ -19,8 +20,20 @@ const CourseDashboard = () => {
           <div>
             <h2>{authUser?.course}</h2>
             <ul>
-              <li>See Overview</li>
-              <li>Start Course</li>
+              <li>
+                {authUser?.course === 'backend engineering' ? (
+                  <Link to="/courseoutline">See Overview</Link>
+                ) : (
+                  ''
+                )}
+              </li>
+              <li>
+                {authUser?.course === 'backend engineering' ? (
+                  <Link to="/coursedashboard">Start Course</Link>
+                ) : (
+                  ''
+                )}
+              </li>
             </ul>
           </div>
           <img src={backend} alt="" />

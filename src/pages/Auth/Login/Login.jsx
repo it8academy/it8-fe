@@ -27,7 +27,7 @@ const Login = (props) => {
       const res = await loginUser(payload);
       setToken(res?.data.token);
       setAuthUser(res?.data);
-      navigate('/dashboard');
+      navigate('/coursedashboard');
       toast.success(res?.data.message);
     } catch (error) {
       toast.error(error?.response.data.message);

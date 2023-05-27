@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/it8-logo.png';
+import logo from '../../assets/logo.png';
 import notification from '../../assets/notification.png';
 import person from '../../assets/person.png';
 import './Dashboardstyle.css';
@@ -7,7 +7,6 @@ import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 import { FaTimes, FaBars } from 'react-icons/fa';
-import CourseDashboard from '../Courses/CourseDashboard';
 import { loginUser } from '../../services/auth';
 import useAuthStore from '../../pages/Auth/Login/useStore';
 // import LightMode from '../Mode/LightMode';
@@ -64,7 +63,7 @@ const Dashboard = () => {
             </div>
             <ul className=" ">
               <li>
-                <Link to="/dashboard">Profile</Link>
+                <Link to="/coursedashboard">Profile</Link>
               </li>
               <li>Notification</li>
               {/* <li className="mode">Switch Mode </li> */}
@@ -76,10 +75,10 @@ const Dashboard = () => {
         <nav className="main-nav ">
           <ul className="">
             <li>
-              <Link to="/dashboard">My Dashboard</Link>
+              <Link to="/coursedashboard">My Dashboard</Link>
             </li>
             <li>
-              <Link to="/dashboard">My Course</Link>
+              <Link to="/coursedashboard">My Course</Link>
             </li>
           </ul>
         </nav>
@@ -96,7 +95,7 @@ const Dashboard = () => {
               <div className="user">
                 <ul>
                   <li>
-                    <Link to="/dashboard">Profile</Link>
+                    <Link to="/coursedashboard">Profile</Link>
                   </li>
                   {/* <li className="mode">Switch Mode </li> */}
                   {log ? (
@@ -110,7 +109,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <CourseDashboard />
+      {/* <CourseDashboard /> */}
     </>
   );
 };

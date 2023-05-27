@@ -8,9 +8,9 @@ import ProductDesign from './pages/ProductDesign/ProductDesign';
 import ProductMgt from './pages/ProductMgt/ProductMgt';
 import FrontEnd from './pages/FrontEnd/FrontEnd';
 import BackEnd from './pages/BackEnd/BackEnd';
-import Dashboard from './components/Dashboard/Dashboard';
+import Coursedashboard from './pages/Coursedashboard';
 import useAuthStore from './pages/Auth/Login/useStore';
-
+import Courseoutline from './pages/Courseoutline';
 function App() {
   const { token } = useAuthStore();
   return (
@@ -36,10 +36,15 @@ function App() {
       <Route path="/productMgt" element={<ProductMgt />} />
       <Route path="/frontEnd" element={<FrontEnd />} />
       <Route path="/backEnd" element={<BackEnd />} />
-      <Route
+      {/* <Route
         path="/dashboard/*"
         element={token ? <Dashboard /> : <Navigate to="/login" />}
+      /> */}
+      <Route
+        path="/coursedashboard/*"
+        element={token ? <Coursedashboard /> : <Navigate to="/login" />}
       />
+      <Route path="/courseoutline" element={<Courseoutline />} />
     </Routes>
   );
 }

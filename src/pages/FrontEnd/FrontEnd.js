@@ -7,15 +7,15 @@ import Learning from "../../components/StackComponent/Learning/Learning";
 import KickStart from "../../components/StackComponent/KickStart/KickStart";
 import Footer from "../../components/StackComponent/Footer/Footer";
 import { FrontEnd_Engineering } from "../../constant/index";
-import top from "../../assets/top.svg";
+// import top from "../../assets/top.svg";
 import Header from "../../components/Header/Header";
 
 const FrontEnd = () => {
   return (
     <div className={classes.head} id="top">
-      <a href="#top" className={classes.top}>
+      {/* <a href="#top" className={classes.top}>
         <img src={top} alt="top" />
-      </a>
+      </a> */}
       <Header />
       <Hero
         title="Frontend"
